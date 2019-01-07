@@ -1,0 +1,42 @@
+{
+  "name": "BankUser",
+  "plural": "BankUsers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "emp_id": {
+      "type": "string",
+      "required": true
+    },
+    "bank_id": {
+      "type": "string"
+    },
+    "sol_id": {
+      "type": "string",
+      "required": true
+    },
+    "mobile_number": {
+      "type": "string",
+      "required": true
+    },
+    "email_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

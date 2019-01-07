@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/qrcode.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div ng-app="stubApp" ng-controller="stubCtrl">
+	<div class="container-fluid">
+		<div class="text-center page-header">
+			<h1>Stub App</h1>
+			<p>Stub app to test Request and Responses !!!</p>
+		</div>
+		<div class="col-lg-2 container-fluid panel panel-default">
+			<div class="panel-body">
+				<a href="#!/add-user">Add User</a>
+			</div>
+			<div class="panel-body">
+				<a href="#!/list-users">List Users</a>
+			</div>
+			<div class="panel-body">
+				<a href="#!/add-tran">Add Tran</a>
+			</div>
+			<div class="panel-body">
+				<a href="#!/list-tran">List Tran</a>
+			</div>
+		</div>
+		<div class="col-lg-10">
+		<div ng-view></div>		
+		</div>
+		<div ng-show="showQrCode">
+            <ng-include src="'./pages/qrCode.htm'">
+            </ng-include>
+        </div>
+	</div>
+</div>
+</body>
+</html>

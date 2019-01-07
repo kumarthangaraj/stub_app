@@ -1,0 +1,25 @@
+<table class="table">
+<thead>
+<tr>
+<th>User Id</th>
+<th>User Name</th>
+<th>Emp Id</th>
+<th>Bank Id</th>
+<th>Sol Id</th>
+<th>User ShortName</th>
+<th>Mobile Number</th>
+<th>Email Id</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="user in users">
+	<td><div style='text-transform:uppercase'>{{user.user_id}}</div></td>
+	<td><div style='text-transform:uppercase'>{{user.user_name}}</div></td>
+	<td>{{user.emp_id}}</td>
+	<td>{{user.bank_id}}</td>
+	<td>{{user.sol_id}}</td>
+	<td>{{user.user_short_name}}</td>
+	<td>{{user. mobile_number}}</td>
+	<td>{{user.email_id}}</td>
+	<td><div ng-click="showQRCode(this)"><img src="./images/qrCode.png" class="img-rounded" alt="QR Code"></td>
+</table>

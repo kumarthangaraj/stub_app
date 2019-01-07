@@ -1,0 +1,47 @@
+{
+  "name": "qrmap",
+  "plural": "qrmaps",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qrcode": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "gen_time": {
+      "type": "date",
+      "required": true
+    },
+    "valid_till": {
+      "type": "date",
+      "required": true
+    },
+    "verified_flg": {
+      "type": "string",
+      "required": true
+    },
+    "otp_handle": {
+      "type": "string",
+      "required": true
+    },
+    "otp_value": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

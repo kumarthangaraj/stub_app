@@ -1,0 +1,27 @@
+{
+  "name": "RegUser",
+  "plural": "qrmaps",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "reg_time": {
+      "type": "date",
+      "required": true
+    },
+    "otp_handle": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
